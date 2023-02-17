@@ -1,0 +1,214 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgba(95, 95, 100, 0.753);
+}
+
+button:hover{
+    background-color: rgb(16, 150, 27);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:rgb(16, 150, 27) }
+
+header{
+    background-color: rgb(245,245,245);
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(16, 150, 27);
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(16, 150, 27);
+}
+
+#infoinicio .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(121, 120, 120, 0.856);
+    color: white;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #infoinicio .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #infoinicio .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #infoinicio h2{
+        margin-top: 0px;
+    }
+
+    #infoinicio .img-container{
+        background-image: url("../media/aerea\ iglesia\ cat.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+
+    
+
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+
+    
+
+
+    h1{
+        font-size: 70px;
+        color:#fff;
+        text-align: center;
+    }
+    .contenedor{ 
+      width:100%;
+        margin: auto;
+    }
+    img{
+        width: 100%;
+    }
+    .galery__columna{
+        margin: 5px; 
+    }
+    .galeria .contenedor{
+        display: grid;
+        }
+    @media(min-width:520px){
+        .galeria .contenedor{     
+      grid-template-columns: repeat(2,50%);
+        }
+    }
+    @media(min-width:728px){
+       .galeria .contenedor{
+      grid-template-columns: repeat(3,33.3%);
+        }
+    }
+    @media(min-width:1024px){
+       .galeria .contenedor{
+        
+      grid-template-columns: repeat(4,25%);
+        }
+        .contenedor{
+             width: 1024px;
+        }
+    }
+    @media(min-width:1200px){
+        .contenedor{
+             width: 1200px;
+        }
+    }
+}
+
